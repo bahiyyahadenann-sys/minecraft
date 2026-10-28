@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    touch-action: manipulation;
+}
+
+/* Hotbar Slot Styling */
+.hotbar-slot {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 2px solid rgba(51, 65, 85, 0.8);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.hotbar-slot:hover {
+    border-color: rgba(148, 163, 184, 0.8);
+}
+
+.hotbar-slot.active {
+    border-color: #10b981;
+    background: rgba(16, 185, 129, 0.15);
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+    transform: translateY(-2px);
+}
+
+.slot-number {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #94a3b8;
+}
+
+.block-name {
+    position: absolute;
+    bottom: 2px;
+    font-size: 8px;
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+/* Blok Pratonton Hotbar */
+.block-preview {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.4);
+}
+
+.grass-preview {
+    background: linear-gradient(135deg, #4ac040 0%, #4ac040 40%, #795548 40%, #795548 100%);
+}
+
+.dirt-preview {
+    background: #795548;
+}
+
+.stone-preview {
+    background: #808080;
+}
+
+.wood-preview {
+    background: #5d4037;
+}
+
+.leaves-preview {
+    background: #2e7d32;
+}
+
+.sand-preview {
+    background: #e0c686;
+}
